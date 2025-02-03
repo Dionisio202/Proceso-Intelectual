@@ -15,6 +15,18 @@
       <password encrypted="false">12345678</password>
       <customUserInfoValues/>
     </user>
+    <user userName="ing.jimmy">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">12345678</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="ing.secre">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">12345678</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="Especialista">
@@ -22,6 +34,9 @@
     </role>
     <role name="Jefe">
       <displayName>Jefe</displayName>
+    </role>
+    <role name="Asistente Administrativo">
+      <displayName>Asistente Administrativo</displayName>
     </role>
   </roles>
   <groups>
@@ -33,6 +48,9 @@
     </group>
     <group name="DINNOVA">
       <displayName>DINNOVA</displayName>
+    </group>
+    <group name="Asistentes" parentPath="/DINNOVA">
+      <displayName>Asistentes</displayName>
     </group>
   </groups>
   <memberships>
@@ -46,6 +64,18 @@
       <userName>ing.fanny</userName>
       <roleName>Especialista</roleName>
       <groupName>Trabajadores</groupName>
+      <groupParentPath>/DINNOVA</groupParentPath>
+    </membership>
+    <membership>
+      <userName>ing.jimmy</userName>
+      <roleName>Especialista</roleName>
+      <groupName>Trabajadores</groupName>
+      <groupParentPath>/DINNOVA</groupParentPath>
+    </membership>
+    <membership>
+      <userName>ing.secre</userName>
+      <roleName>Asistente Administrativo</roleName>
+      <groupName>Asistentes</groupName>
       <groupParentPath>/DINNOVA</groupParentPath>
     </membership>
   </memberships>

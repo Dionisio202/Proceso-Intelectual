@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ASCII"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="ing.ruben">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">12345678</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="ing.fanny">
+      <manager>ing.ruben</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">12345678</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="Especialista">
+      <displayName>Especialista</displayName>
+    </role>
+    <role name="Jefe">
+      <displayName>Jefe</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="Trabajadores" parentPath="/DINNOVA">
+      <displayName>Trabajadores</displayName>
+    </group>
+    <group name="Jefe" parentPath="/DINNOVA">
+      <displayName>Jefe</displayName>
+    </group>
+    <group name="DINNOVA">
+      <displayName>DINNOVA</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>ing.ruben</userName>
+      <roleName>Jefe</roleName>
+      <groupName>Jefe</groupName>
+      <groupParentPath>/DINNOVA</groupParentPath>
+    </membership>
+    <membership>
+      <userName>ing.fanny</userName>
+      <roleName>Especialista</roleName>
+      <groupName>Trabajadores</groupName>
+      <groupParentPath>/DINNOVA</groupParentPath>
+    </membership>
+  </memberships>
+</organization:Organization>
